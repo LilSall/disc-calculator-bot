@@ -52,7 +52,7 @@ async def Help(ctx):
     embed.add_field(name="!subtract", value="Subtract two numbers: `!subtract 10 5`", inline=False)
     embed.add_field(name="!multiply", value="Multiply two numbers: `!multiply 5 10`", inline=False)
     embed.add_field(name="!divide", value="Divide two numbers: `!divide 10 5`", inline=False)
-    embed.add_field(name="!calculate", value="Calculate an expression: `!calculate 5 + 3`", inline=False)
+    embed.add_field(name="!calc", value="Calculate an expression: `!calculate 5 + 3`", inline=False)
 
     await ctx.send(embed=embed)
 
