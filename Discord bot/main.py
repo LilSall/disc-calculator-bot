@@ -3,7 +3,7 @@ from discord.ext import commands
 
 intents = discord.Intents.all()
 
-client = commands.Bot(command_prefix="!", intents=intents)
+client = commands.Bot(command_prefix="$", intents=intents)
 
 @client.event
 async def on_ready():
@@ -48,14 +48,14 @@ async def Help(ctx):
         color=discord.Color.blue()
     )
 
-    embed.add_field(name="!add", value="Add two numbers: `!add 5 10`", inline=False)
-    embed.add_field(name="!subtract", value="Subtract two numbers: `!subtract 10 5`", inline=False)
-    embed.add_field(name="!multiply", value="Multiply two numbers: `!multiply 5 10`", inline=False)
-    embed.add_field(name="!divide", value="Divide two numbers: `!divide 10 5`", inline=False)
-    embed.add_field(name="!calc", value="Calculate an expression: `!calculate 5 + 3`", inline=False)
+    embed.add_field(name="$add", value="Add two numbers: `$add 5 10`", inline=False)
+    embed.add_field(name="$subtract", value="Subtract two numbers: `$subtract 10 5`", inline=False)
+    embed.add_field(name="$multiply", value="Multiply two numbers: `$multiply 5 10`", inline=False)
+    embed.add_field(name="$divide", value="Divide two numbers: `$divide 10 5`", inline=False)
+    embed.add_field(name="$calc", value="Calculate an expression: `$calculate 5 + 3`", inline=False)
 
     await ctx.send(embed=embed)
 
 
 
-client.run('YOUR-BOT-TOKEN')
+client.run('YOUR-DISCORD-TOKEN')
